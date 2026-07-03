@@ -1,6 +1,11 @@
-## Hi there 👋
+## Welcome 👋
+
+This page is built with HTML, CSS and Javascript to be a simple blog.
+
 
 <!--
+Will leave this imposed information for now.
+
 **hiefs/hiefs** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
