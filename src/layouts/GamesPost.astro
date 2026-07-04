@@ -7,7 +7,7 @@ import Header from '../components/Header.astro';
 
 type Props = CollectionEntry<'games'>['data'];
 
-const { title, description, pubDate, updatedDate } = Astro.props;
+const { title, description, pubDate, updatedDate, heroImage, heroImage2 } = Astro.props;
 ---
 
 <html lang="en">
@@ -20,14 +20,17 @@ const { title, description, pubDate, updatedDate } = Astro.props;
 		<Header />
 		<main style="margin-bottom: 5px;">
 			<div class="post">
-				<tag class="accent"><FormattedDate date={pubDate} /> {
+				<tag class="accent"><FormattedDate date={pubDate} /></tag>
+				 {
 					updatedDate && (
-						<div class="last-updated-on">
-							&nbsp; &#183; Game Completed on: <FormattedDate date={updatedDate} />
+						<div class="last-updated-on accent" style="padding: 2px 4px;">
+							Game Completed on: <FormattedDate date={updatedDate} />
 						</div>
 					)
-				}</tag>
+				}
 				<div class="post-block-header">{title}</div>
+				<img src={heroImage?.src} />
+				<img src={heroImage2?.src} />
 				<slot />
 			</div>
 		</main>
