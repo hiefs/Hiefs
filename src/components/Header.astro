@@ -1,0 +1,49 @@
+---
+import { SITE_TITLE } from '../consts';
+import HeaderLink from './HeaderLink.astro';
+---
+
+<header>
+	<div class="container">
+		<div class="header">
+			<h1 style="font-style: oblique; text-wrap-mode: wrap;">the watering hole</h1> 
+			<nav>
+				<p>A BLOG BY HIEFS / </p>
+				<HeaderLink href="/">Home</HeaderLink>
+				<HeaderLink href="/blog/">Blog</HeaderLink>
+			</nav>
+		</div>
+	</div>
+</header>
+<style>
+	header {
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding-bottom: 30px;
+		padding-top: 30px;
+		max-width: 800px;
+		margin: auto;
+	}
+
+	nav {
+		color: #C81D25;
+		font-family: 'Geist Mono', monospace;
+		font-size: 11px;
+		letter-spacing: 3px;
+		padding: 2px 4px;
+		text-transform: uppercase;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 1rem;
+	}
+
+	/* nav {
+		font-style: oblique;
+		display: flex;
+		flex-direction: row;
+		gap: 1rem;
+	} */
+</style>
