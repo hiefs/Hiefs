@@ -11,12 +11,25 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
 	<body>
+		<div class="container">
 		<Header />
 		<main>
-            <div class="content">
-                 Welcome
-            </div>
+			<p> Welcome.</p>
+			<p> This blog contains the information of many different aspects of my hobbies,
+				interests, and more.
+			</p>
 		</main>
 		<Footer />
+		</div>
 	</body>
+
+	<style>
+		page {
+			display: flex;
+			flex-direction: column;
+			padding-bottom: 30px;
+			padding-top: 30px;
+			max-width: 800px;
+		}
+	</style>
 </html>
