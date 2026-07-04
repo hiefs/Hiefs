@@ -1,21 +1,42 @@
-## Welcome 👋
+# sv
 
-This page is built with HTML, CSS and Javascript to be a simple blog.
+Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
 
+## Creating a project
 
-<!--
-Will leave this imposed information for now.
+If you're seeing this, you've probably already done this step. Congrats!
 
-**hiefs/hiefs** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+```sh
+# create a new project
+npx sv create my-app
+```
 
-Here are some ideas to get you started:
+To recreate this project with the same configuration:
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+```sh
+# recreate this project
+npx sv@0.16.1 create --template minimal --types ts --add vitest="usages:unit,component" prettier --install yarn my-app
+```
+
+## Developing
+
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+
+```sh
+npm run dev
+
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
+
+## Building
+
+To create a production version of your app:
+
+```sh
+npm run build
+```
+
+You can preview the production build with `npm run preview`.
+
+> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
