@@ -23,8 +23,8 @@ const { title, description, pubDate, updatedDate, heroImage, heroImage2 } = Astr
 				<tag class="accent"><FormattedDate date={pubDate} /></tag>
 				 {
 					updatedDate && (
-						<div class="last-updated-on accent" style="padding: 2px 4px;">
-							Game Completed on: <FormattedDate date={updatedDate} />
+						<div class="last-updated-on completed" style="padding: 2px 4px;">
+							COMPLETED: <FormattedDate date={updatedDate} />
 						</div>
 					)
 				}
