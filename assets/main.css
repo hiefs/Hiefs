@@ -30,7 +30,7 @@ h1 {
     font-weight: 700;
     font-size: 52px;
     text-transform: uppercase;
-    
+    white-space: nowrap;
 }
 
 hr {
@@ -57,7 +57,7 @@ tag {
     font-family: 'Geist Mono', monospace;
     font-size: 11px;
     letter-spacing: 3px;
-    line-height: 3;
+    line-height: 2;
     padding: 2px 4px;
     text-transform: uppercase;
 }
@@ -137,11 +137,11 @@ tag {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    line-height: 0.5;
     padding-bottom: 30px;
     padding-top: 30px;
     max-width: 800px;
     margin: auto;
+    
 }
 
 .tag-spacing {
