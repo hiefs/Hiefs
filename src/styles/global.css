@@ -26,6 +26,16 @@ body {
     margin: auto;
 }
 
+p {
+    font-size: medium;
+    font-family: var(--font-jet-brains);;
+}
+
+li {
+    font-size: medium;
+    font-family: var(--font-jet-brains);;
+}
+
 h1 {
     color: var(--secondary-color);
     font-family: var(--font-jet-brains);

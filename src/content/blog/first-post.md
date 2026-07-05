@@ -52,7 +52,7 @@ It's a long list of things but I've already read 10 books so far this year, and 
 
 I am also in a Distance Learning Masters Program for Computer Engineering. I am only in my second year so I'm fresh at it.
 
-I will also make this list for games I want to play or complete this year:</p>
+I will also make this list for games I want to play or complete this year:
 - Chants of Sennaar (Currently Playing)
 - Rhythm Doctor
 - Hades
