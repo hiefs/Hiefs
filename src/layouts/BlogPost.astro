@@ -19,6 +19,11 @@ const { title, description, pubDate, updatedDate } = Astro.props;
 	<body>
 		<div class="container">
 		<Header />
+
+		<div class="hero">
+			<h1>{title} </h1>
+		</div>
+
 		<main>
 			<div class="post">
 				<tag class="accent"><FormattedDate date={pubDate} /> {
@@ -28,7 +33,6 @@ const { title, description, pubDate, updatedDate } = Astro.props;
 						</div>
 					)
 				}</tag>
-				<div class="post-block-header">{title}</div>  
 				<slot />
 			</div>
 		</main>

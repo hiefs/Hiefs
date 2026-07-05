@@ -1,0 +1,31 @@
+---
+interface Props {
+	game: string,
+    book: string
+}
+
+const { game, book } = Astro.props;
+---
+<div class="aside">
+    <p>Currently Playing: <span class="highlight">{game}</span></p>
+    <p>Currently Reading: <span class="highlight">{book}</span></p>
+</div>
+<style>
+	.aside {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    p {
+        color: #C81D25;
+        font-family: 'Helvetica', sans-serif;
+        border: 1px solid #C81D25;
+        padding: 9px 18px;
+        background-color: #0A0D11;
+        text-transform: uppercase;
+    }
+
+    .highlight {
+        color: #DE9E36
+    }
+</style>
