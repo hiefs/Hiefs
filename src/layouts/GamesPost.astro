@@ -18,6 +18,11 @@ const { title, description, pubDate, updatedDate, heroImage, heroImage2 } = Astr
 	<body>
 		<div class="container">
 		<Header />
+
+		<div class="hero">
+			<h1>{title} </h1>
+		</div>
+		
 		<main style="margin-bottom: 5px;">
 			<div class="post">
 				<tag class="accent"><FormattedDate date={pubDate} /></tag>
@@ -28,7 +33,6 @@ const { title, description, pubDate, updatedDate, heroImage, heroImage2 } = Astr
 						</div>
 					)
 				}
-				<div class="post-block-header">{title}</div>
 				<img src={heroImage?.src} />
 				<img src={heroImage2?.src} />
 				<slot />
