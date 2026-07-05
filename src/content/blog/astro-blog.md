@@ -1,6 +1,6 @@
 ---
 title: 'Moving to Astro'
-description: 'With my desire for better organization, Ive moved to Astro'
+description: 'With my desire for better organization, Ive moved to Astro.'
 pubDate: 'Jul 04 2026'
 ---
 

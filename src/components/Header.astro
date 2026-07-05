@@ -1,32 +1,28 @@
 ---
-import { SITE_DESCRIPTION } from '../consts';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 import HeaderLink from './HeaderLink.astro';
 ---
 
 <header>
-	
-		<div class="header">
-			<h1 style="font-style: oblique; text-wrap-mode: wrap;">{SITE_DESCRIPTION}</h1> 
-			<nav>
-				<p>A BLOG BY HIEFS / </p>
-				<HeaderLink href="/">Home</HeaderLink>
-				<HeaderLink href="/blog/">Blog</HeaderLink>
-				<HeaderLink href="/games/">Games</HeaderLink>
-			</nav>
-		</div>
+	<h3>{SITE_TITLE}</h3> 
+	<nav>
+		<HeaderLink href="/">Home</HeaderLink>
+		<HeaderLink href="/blog/">Blog</HeaderLink>
+		<HeaderLink href="/games/">Games</HeaderLink>
+	</nav>
 </header>
 <style>
 	header {
 		display: flex;
-		flex-direction: column;
-		padding-bottom: 5px;
-		padding-top: 30px;
-		max-width: 800px;
+		flex-direction: row;
+		padding: 5px;
+		justify-content: space-between;
+		font-family: Arial, Helvetica, sans-serif;
+		letter-spacing: 3px;
 	}
 
 	nav {
-		color: #C81D25;
-		font-family: 'Geist Mono', monospace;
+		font-family: Arial, Helvetica, sans-serif;
 		font-size: 11px;
 		letter-spacing: 3px;
 		padding: 2px;
