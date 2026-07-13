@@ -1,8 +1,6 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
-import Header from '../components/Header.astro';
-import Aside from '../components/Aside.astro'
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 ---
 
@@ -12,100 +10,40 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
 	<body>
-		<div class="container">
-			<!--  ----------- HEADER ----------- -->
-			<div class="header">
-				<Header />
-			</div>
+		<!------------- HEADER ------------->
 
-			<div class="hero">
-				<h1>Wandering through <br>the <span class="primary">digital</span> wilderness</h1>
-			</div>
- 
-			<!--  ----------- MAIN ----------- -->
-			<main>
-				<div class="grid">
-					<section class="grid-item">
-						<h2>Blog Posts</h2>
-						<hr>
-						<p>These contain my general thoughts that I decided to post. There isn't any real criterea that goes here beyond that.</p>
-						<a href="/blog/">Take a look.</a>
-					</section>
-					<section class="grid-item">
-						<h2>Gaming Thoughts</h2>
-						<hr>
-						<p>When I finish a game (or don't) I'll probably post something about it. </p>
-						<a href="/games/">Check it out.</a>
-					</section>
-					<section class="grid-item">
-						<h2>Under Construction</h2>
-						<hr>
-						<p>As time goes I will add more to this. For now this is all I have.</p>
-					</section>
-				</div>
-			</main>
+		<!------------ END HEADER----------->
 
-			<!--  ----------- FOOTER ----------- -->
-			<div class="footer">
-				<Footer />
-			</div>
-			
+		<div class="hero">
+			<div class="subtitle">Journey Of The</div>
+			<h1>Software Craftsman</h1>
+			<p class="comingsoon">Updating Soon</p>
 		</div>
+
+		<!------------ MAIN ------------->
+		<main>
+			
+		</main>
+
+		<!------------ END MAIN ------------->
+
+		<!-------------- FOOTER ------------->
+		<div class="footer">
+			<Footer />
+		</div>
+		<!----------- END FOOTER ------------>
 	</body>
 
 	<style>
-
-		a {
-			color: #DE9E36
-		}
-		
-		h1 {
-			color: var(--secondary-color);
-			font-family: var(--font-jet-brains);
-			font-size: 32px;
-			text-transform: uppercase;
-			letter-spacing: 1rem;
-		}
-
-		main {
-			font-family: var(--font-jet-brains);
-			margin: auto;
-		}
-
-		section {
-			border: 1px solid #1b232c;
-			padding: 12px 18px;
-		}
-
-		.grid-item {
-
-		}
-
-		.grid {
-			display: grid;
-			grid-template-columns: repeat(3, 1fr);
-			padding: 5px 0;
-			gap: 10px;
-			max-width: 1100px;
+		.comingsoon {
+			margin-top: 50px;
+			font-size: xx-small;
 		}
 
 		.hero {
 			word-wrap: break-word;
 			white-space: wrap;
-			letter-spacing: 2px;
 			text-align: center;
-			padding-top: 50px;
-		}
-
-		.articles {
-		}
-
-		.aside {
-
-		}
-
-		.footer {
-			background-color: azure;
 		}
 	</style>
 </html>
